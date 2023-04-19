@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>DIP Calculation for CSS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+  
+</head>
+<body>
+  <script src="./script.js"></script>
+  <h1>dip Calculation for CSS</h1>
+  <hr>
+  <br>
+  <div id="inputDip" style="display: flex;align-items: center;">
+    <input type="number" id="dip" value="0" oninput="changeValue();">
+    <label for="dip">dip (dp)</label>
+  </div>
+  <div id="inputTar" style="display: flex;align-items: center;">
+    <input type="text" id="tar" value="width" oninput="changeValue();">
+    <label for="tar">Target Variable</label>
+  </div>
+  <table>
+    <tbody>
+      <tr>
+        <th></th>
+        <th>Density</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>ldpi</td>
+        <td>0.75</td>
+        <td id="resultL">0px</td>
+      </tr>
+      <tr>
+        <td>mdpi</td>
+        <td>1</td>
+        <td id="resultM">0px</td>
+      </tr>
+      <tr>
+        <td>hdpi</td>
+        <td>1.5</td>
+        <td id="resultH">0px</td>
+      </tr>
+      <tr>
+        <td>xdpi</td>
+        <td>2</td>
+        <td id="resultX">0px</td>
+      </tr>
+      <tr>
+        <td>xxdpi</td>
+        <td>3</td>
+        <td id="resultXX">0px</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>CSS Code</h2>
+  <hr>
+  <div id="codeExport">
+    <div id="codeline1"><label></label><code></code></div>
+    <div id="codeline2"><label></label><code></code></div>
+    <div id="codeline3"><label></label><code></code></div>
+    <div id="codeline4"><label></label><code></code></div>
+    <div id="codeline5"><label></label><code></code></div>
+    <pre>
+      <textarea id="cssCode">
+      </textarea>
+    </pre>
+  </div>
+</body>
+</html>
